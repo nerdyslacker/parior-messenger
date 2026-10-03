@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Parior Messenger
+Comment=Peer-to-peer messenger
+Exec=parior
+Icon=parior
+Terminal=false
+Type=Application
+Categories=Network;InstantMessaging;Chat;
+StartupWMClass=parior

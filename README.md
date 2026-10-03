@@ -46,6 +46,53 @@ Skald requires SDL3 and a Vulkan loader/driver. See its platform documentation f
 
 On Linux, desktop notifications use `notify-send`, supplied by the distribution's libnotify command-line tools. Notification delivery is skipped silently when it is unavailable.
 
+## Installation
+
+Build and install Parior system-wide with:
+
+```sh
+sudo make install
+```
+
+This installs:
+
+```text
+/usr/bin/parior
+/usr/share/icons/hicolor/256x256/apps/parior.png
+/usr/share/applications/parior.desktop
+```
+
+The desktop entry registers Parior Messenger with the desktop environment, and the installed icon is available through the standard hicolor icon theme.
+
+By default, `make install` uses `/usr` as the installation prefix. A different prefix can be selected with `PREFIX`:
+
+```sh
+make install PREFIX=/usr/local
+```
+
+For packaging systems, use `DESTDIR` to stage the installation:
+
+```sh
+make DESTDIR="$pkgdir" install
+```
+
+The install target builds the optimized release binary automatically. To install to a custom staging directory without requiring root privileges:
+
+```sh
+make DESTDIR="$PWD/pkg" install
+```
+
+After installation, Parior Messenger can be launched from the application menu or directly with:
+
+```sh
+parior
+```
+Remove a system-wide installation with:
+
+```sh
+sudo make uninstall
+```
+
 ## Commands
 
 ```sh
