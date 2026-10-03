@@ -4,7 +4,7 @@
 <a href="https://github.com/nerdyslacker/parior-messenger"><img src="assets/logo.png" width="150"/></a>
 </div>
 
-Desktop GUI client for the Barev protocol, written in Odin with barev-odin and the Skald GUI framework.
+Desktop GUI client for the Barev protocol, written in Odin with [barev-odin](https://github.com/nerdyslacker/barev-odin) and the [Skald](https://github.com/BuLEEto/Skald) GUI framework.
 
 The current application provides first-run identity setup, persistent contacts, pinned peers and theme settings, local and peer avatars, presence and connection controls, a responsive compact-to-wide interface, a nonblocking network polling loop, peer management, typing indicators, unread counts, desktop notifications, file transfers with progress and cancellation.
 
